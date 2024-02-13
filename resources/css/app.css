@@ -1,0 +1,266 @@
+@layer tailwind-base,primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:focus,
+input:focus {
+    box-shadow: none !important;
+    border-color: #858b95 !important;
+    color: none !important;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.ms-n5 {
+    margin-left: -40px;
+}
+
+.fancyBtn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+
+.fancyBtn:before,
+.fancyBtn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #1a283d;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.fancyBtn:before {
+    opacity: 0.5;
+}
+
+.fancyBtn:after {
+    transition-delay: 0.2s;
+}
+
+.fancyBtn:hover {
+    color: #fff !important;
+    .fa-shopping-bag,
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-youtube,
+    .fa-linkedin-in,
+    .fa-search {
+        color: #fff !important;
+    }
+}
+
+.fancyBtn:hover:before,
+.fancyBtn:hover:after {
+    top: 0;
+}
+
+.collapse {
+    visibility: initial;
+}
+
+.marginTop {
+    margin-top: 300px;
+}
+
+.marginTopHalf {
+    margin-top: 150px;
+}
+.marginBottom {
+    margin-bottom: 150px;
+}
+
+.colorBlueish {
+    color: #1a283d !important;
+}
+
+.bgBlueish {
+    background-color: #1a283d;
+}
+
+.hoverColorBlueish {
+    transition: opacity 0.3s;
+}
+
+.hoverColorBlueish:hover {
+    opacity: 0.8;
+}
+
+.hoverSearchItem {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.hoverSearchItem:hover {
+    background-color: #1a283d;
+    .colorBlueish,
+    small {
+        color: #fff !important;
+    }
+}
+
+.shopNow {
+    top: 0;
+    right: 0;
+}
+
+.fa-sack-dollar,
+.fa-phone,
+.fa-award {
+    font-size: 60px;
+    color: #1a283d;
+}
+
+.feature-card {
+    height: 120px;
+    text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    background-color: #25d366;
+    padding: 12px;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+    transition: transform 0.5s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.filterProducts {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.footerLink {
+    color: #1a283d;
+    transition: color 0.5s, border 0.3s;
+}
+
+.logoImg {
+    width: 100px;
+    height: 100px;
+}
+
+.bestsellingImg {
+    width: 200px;
+    height: 200px;
+}
+.tableImg {
+    width: 100px;
+    height: 100px;
+}
+
+.reviewImg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.productImg {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.shopImg {
+    width: 400px;
+    height: 350px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.shopImg:hover,
+.sliderImg:hover {
+    transform: scale(1.1);
+}
+
+.footerIcon {
+    width: 30px;
+}
+
+.sliderImg {
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+tr {
+    vertical-align: top;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.lh0 {
+    line-height: 0;
+}
+
+.colorOrange {
+    color: #ff9800;
+}
+
+.hide {
+    display: none;
+}
+
+.aboutus-p {
+    word-spacing: 8px;
+    font-size: 1.2rem;
+}
+
+.fa-users {
+    font-size: 50px;
+}
+
+@media (max-width: 1200px) {
+    .dropdown-menu[data-v-020786c9] {
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .modalSearch {
+        width: 100% !important;
+    }
+    .feature-card {
+        height: 100px;
+        margin-bottom: 100px;
+    }
+    .phone-locale {
+        display: block;
+    }
+    .shopImg {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}

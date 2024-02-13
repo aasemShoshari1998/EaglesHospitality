@@ -1,0 +1,1 @@
+import{_ as t}from"./app-ph6eZdHP.js";import{o as r,e as n,r as o}from"./vendor-3t5S13OX.js";const s={},a={class:"inline-flex items-center px-4 py-2 border border-transparent rounded-md text-xs text-white uppercase tracking-widest transition ease-in-out duration-150"};function c(e,i){return r(),n("button",a,[o(e.$slots,"default")])}const _=t(s,[["render",c]]);export{_ as P};
